@@ -5,6 +5,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3: Developement Website</title>
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <style>
   #header,
   #footer,
@@ -13,7 +16,7 @@
   body {
     background-color: #E0E0E0;
     color: #484848;
-    font-family: "Roboto" Times, serif;
+   font-family: "Roboto", sans-serif;
     line-height: 1.4em;
     margin: 0xp;
   }
@@ -25,7 +28,7 @@
    
   }
 #header {
-    height: 160px;
+    height: 250px;
     background-image: url('headerimagegirl.png');
     background-position: center;
     background-color: white;
@@ -33,16 +36,24 @@
       
   }
   #nav {
+     display: flex;
+    align-items: center;
     background-color: white;
-  
+    padding: 0 20px;
+    height: 60px;
   
   }
   
   #nav ul {
    list-style: none;
     display: flex;
-    padding: 8;
-    
+    padding: 0;
+    margin: 0;   
+       
+  }
+  
+  #nav li {
+    margin-right: 25px;
   }
    h1 {
 
@@ -63,9 +74,8 @@
                     <li><a href="/">ABOUT</a></li>
                 </ul>
      </div>
-      <h1>Lisa</h1>
-     
     </div>
+ </div>
   </body>
   
  </html>
