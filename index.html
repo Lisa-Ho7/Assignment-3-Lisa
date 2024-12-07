@@ -72,26 +72,50 @@
       }
   
   .container {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px; 
-    margin-top: 40px;
+    margin-top: 130px;
+  
+
+  
   }
   
   .box  {
-    width: 340px;
-    height: 340px;
+    width: 330px;
+    height: 330px;
     position: relative;
     overflow: hidden;
+      padding: 20px;
+    border: 1px solid;
   }
   .box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.8;
     
   }
   
+  .box .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  
+  }
+  
+  .box .overlay-text {
+    position: absolute;
+    top: 50%
+    
+  }
   </style>
  </head>
   <body>
@@ -109,7 +133,16 @@
     </div>
       <div class="container">
         <div class="box">
-          <img src="GraphicDesign_TV.png" alt="image 1">
+          <img src="GraphicDesign_TV.png" alt="Graphic Design Icon of TV, stool, and easel"> 
+          </div>
+        <div class="box">
+          <img src="Robin_Fly.png" alt="Digital Art Icon of Angelic girl">
+        </div>
+        <div class="box">
+          <img src="landscape_photography.png" alt="Photography icon of garden landscape">
+        </div>
+        <div class="box">
+          <img src="Animation_deluxecamp.png" alt="Animation icon of fishing at a camp">
         </div>
       </div>
  </div>
