@@ -90,6 +90,7 @@
     overflow: hidden;
       padding: 20px;
     border: 1px solid;
+  
   }
   .box img {
     width: 100%;
@@ -112,9 +113,28 @@
   }
   
   .box .overlay-text {
+
     position: absolute;
-    top: 50%
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+     
+  }
+  
+  .box:hover .dark-overlay {
+    opacity: 1;
+  }
+  
+  .box:hover .overlay-text {
+  
+    opacity: 1;
+   letter-spacing: 1;
+    font-weight: 260
   }
   </style>
  </head>
@@ -132,10 +152,12 @@
      </div>
     </div>
       <div class="container">
-        <div class="box">
+        <a href="https://www.example.com" class="box">
           <img src="GraphicDesign_TV.png" alt="Graphic Design Icon of TV, stool, and easel"> 
-          </div>
-        <div class="box">
+         <div class="dark-overlay"></div>
+        <div class="overlay-text">GRAPHIC DESIGNS</div>
+          </a>
+          <div class="box">
           <img src="Robin_Fly.png" alt="Digital Art Icon of Angelic girl">
         </div>
         <div class="box">
